@@ -21,6 +21,7 @@ const ProjectGrid = ({ projects }) => {
         )}
         priority
         sizes="100vw"
+        placeholder="blur"
       />
       {projects.map((project) => (
         <label

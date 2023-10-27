@@ -20,7 +20,10 @@ export default function RootLayout({ children }) {
               " bg-[rgb(var(--primary-rgb))] text-[rgb(var(--secondary-rgb))]",
             )}
           >
-            <a href="/" className="block">
+            <a
+              href="/"
+              className="block text-xl text-fuchsia-300 hover:animate-pulse"
+            >
               Home
             </a>
           </nav>

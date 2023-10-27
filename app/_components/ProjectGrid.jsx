@@ -25,7 +25,6 @@ const ProjectGrid = ({ projects }) => {
           key={"label_" + project.id}
           className={clsx(
             "group z-0 p-4",
-            "border-b border-gray-300 border-opacity-20 last:border-b-0 lg:border",
             "text-gray-300 text-opacity-40",
             selectedProject === project.id &&
               "border-white bg-fuchsia-600 bg-opacity-20 shadow backdrop-blur-sm",
@@ -45,8 +44,11 @@ const ProjectGrid = ({ projects }) => {
           />
           <a
             className={clsx(
-              "text-lg underline underline-offset-4 hover:font-medium",
-              selectedProject === project.id && "text-white",
+              "text-lg underline underline-offset-4 transition-opacity hover:font-medium",
+              selectedProject === project.id
+                ? " text-white opacity-100"
+                : "opacity-0",
+              "hover:animate-pulse",
             )}
             href={`/projects/${project.id}`}
           >

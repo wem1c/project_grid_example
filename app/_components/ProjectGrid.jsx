@@ -12,13 +12,10 @@ const ProjectGrid = ({ projects }) => {
   return (
     <main className="grid-rows-9 relative grid min-h-[calc(100svh-3rem)] bg-fuchsia-400 bg-opacity-20 lg:grid-cols-3 lg:grid-rows-3">
       <Image
-        key={"img" + projects[0].id}
         src={projects[selectedProject - 1].image}
-        alt="image"
+        alt="image" //TODO: add alt text
         fill
-        className={clsx(
-          "object-cover object-center transition-opacity duration-1000",
-        )}
+        className="object-cover object-center transition-opacity"
         priority
         sizes="100vw"
         placeholder="blur"

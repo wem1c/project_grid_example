@@ -1,6 +1,6 @@
 # "What am I looking at?"
 
-Just the other day my friend was showing a local architecture studio's website, and I was quite pleased with the homepage!
+Just the other day my friend was showing a local [architecture studio's website](https://aim-studio.me/), and I was quite pleased with the homepage!
 
 It was a fullscreen grid of projects, with the preview image of each project being set as the background of the entire page. As you hover over each project tile, the background image would change to the hovered project's image.
 
